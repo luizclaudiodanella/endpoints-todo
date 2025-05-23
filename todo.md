@@ -1,24 +1,23 @@
 # 📋 LISTA COMPLETA DE ENDPOINTS
 
 ## 👤 **GESTÃO DE CONTAS**
-- `GET /api/account/profile` - Buscar dados do perfil do usuário
-- `GET /api/account/bank-data` - Buscar dados bancários para compartilhamento
-- `GET /api/user/personal-data` - Buscar dados pessoais
-- `PUT /api/user/social-name` - Alterar nome social
-- `PUT /api/user/email` - Alterar e-mail (envia código de validação)
-- `PUT /api/user/phone` - Alterar celular (envia código de validação)
+- `GET /client/me` - Buscar dados do perfil do usuário
+- `GET /client/accounts` - Buscar dados bancários para compartilhamento
+- `PUT /client/social-name` - Alterar nome social
+- `PUT /client/email` - Alterar e-mail (envia código de validação)
+- `PUT /client/phone` - Alterar celular (envia código de validação)
 - `POST /api/user/validate-change` - Validar código de alteração (e-mail/celular)
-- `GET /api/account/balance` - Verificar saldo para encerramento
+- `GET /api/account/balance/snapshot` - Verificar saldo para encerramento
 - `GET /api/account/closure-reasons` - Listar motivos de encerramento
-- `POST /api/account/close` - Encerrar conta
+- `POST /api/account/{account_code}/close` - Encerrar conta
 
 ## 🔐 **SENHAS E SEGURANÇA**
-- `POST /api/auth/validate-password` - Validar senha atual
+- `POST /client/auth/` - Validar senha atual
 - `PUT /api/auth/change-app-password` - Alterar senha do aplicativo
-- `PUT /api/auth/change-transaction-password` - Alterar senha transacional
-- `POST /api/auth/forgot-password` - Esqueci senha (envia código)
-- `POST /api/auth/reset-password` - Resetar senha com código
-- `PUT /api/auth/biometry` - Habilitar/desabilitar biometria
+- `POST /client/transaction_password` - Alterar e criar senha transacional
+- `POST /client/forgot-password` - Esqueci senha (envia código)
+- `POST /client/reset-password` - Resetar senha com código
+- `PUT /client/biometry` - Habilitar/desabilitar biometria
 
 ## 💳 **GESTÃO DE CARTÕES**
 - `GET /api/cards` - Listar todos os cartões do usuário
