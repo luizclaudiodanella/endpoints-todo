@@ -6,14 +6,14 @@
 - ❌ `PUT /client/social_name` - Alterar nome social
 - ❌ `PUT /client/email` - Alterar e-mail (envia código de validação)
 - ❌ `PUT /client/phone` - Alterar celular (envia código de validação)
-- ❌ `POST /api/user/validate_change` - Validar código de alteração (e-mail/celular)
-- ✅ `GET /api/account/balance/snapshot` - Verificar saldo para encerramento
-- ❌ `GET /api/account/closure_reasons` - Listar motivos de encerramento
-- ✅ `POST /api/account/{account_code}/close` - Encerrar conta
+- ❌ `POST /client/validate_change` - Validar código de alteração (e-mail/celular)
+- ✅ `GET //account/balance/snapshot` - Verificar saldo para encerramento
+- ❌ `GET /account/closure_reasons` - Listar motivos de encerramento
+- ✅ `POST /account/{account_code}/close` - Encerrar conta
 
 ## **SENHAS E SEGURANÇA**
 - ✅ `POST /client/auth/` - Validar senha atual
-- ❌ `PUT /api/auth/change_password` - Alterar senha do aplicativo
+- ❌ `PUT /auth/change_password` - Alterar senha do aplicativo
 - 🔧 `POST /client/transaction_password` - Alterar e criar senha transacional
 - 🔧 `POST /client/forgot_password` - Esqueci senha (envia código)
 - 🔧 `POST /client/reset_password` - Resetar senha com código
