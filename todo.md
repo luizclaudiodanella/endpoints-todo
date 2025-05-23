@@ -52,7 +52,7 @@
 ## **PIX TRANSAÇÕES**
 - ❌ `POST /account/pix/validate-recipient` - Validar destinatário
 - 🔧 `POST /account/pix/send` - Enviar PIX
-- ✅ `POST /account/pix/send/validate` - Validar antes de enviar (saldo, limites)
+- ❌ `POST /account/pix/send/validate` - Validar antes de enviar (saldo, limites)
 - ❌ `POST /account/pix/schedule` - Agendar PIX
 - ❌ `GET /account/pix/scheduled` - Listar PIX agendados
 - ❌ `DELETE /account/pix/scheduled/{id}` - Cancelar PIX agendado
@@ -68,11 +68,11 @@
 - ❌ `DELETE /account/pix/contacts/{contact_id}` - Remover contato
 
 ## **PIX RELATÓRIOS**
-- ✅ `GET /account/pix/statement` - Extrato PIX
-- ✅ `GET /account/pix/limits` - Consultar limites PIX
-- ✅ `PUT /account/pix/limits/request-change` - Solicitar alteração de limite
-- ✅ `GET /account/pix/receipt/{transaction_id}` - Gerar comprovante
-- ✅ `POST /account/pix/receipt/{transaction_id}/share` - Compartilhar comprovante
+- ❌ `GET /account/pix/statement` - Extrato PIX
+- ❌ `GET /account/pix/limits` - Consultar limites PIX
+- ❌ `PUT /account/pix/limits/request-change` - Solicitar alteração de limite
+- ❌ `GET /account/pix/receipt/{transaction_id}` - Gerar comprovante
+- ❌ `POST /account/pix/receipt/{transaction_id}/share` - Compartilhar comprovante
 
 ## **ENDEREÇOS**
 - ❌ `GET /client/addresses` - Listar endereços salvos
